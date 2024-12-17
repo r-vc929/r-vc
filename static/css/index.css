@@ -162,3 +162,6 @@ audio{
 .table td{
   vertical-align: middle;
 }
+h3.title.is-6 {
+  font-size: 0.7rem;  
+}
