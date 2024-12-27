@@ -7,6 +7,27 @@
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>r-vc</title>
+  <style>
+    .table-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%; /* Adjust as needed */
+        max-width: 100%;
+    }
+    .table {
+        border-collapse: collapse;
+        width: 100%; /* Change to a larger width if needed */
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        min-width: 160px; /* Ensure columns have minimum width */
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+  </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7749G0HJZ"></script>
@@ -130,62 +151,110 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column">
+        <div class="column" style="overflow-x: auto; max-width: 100%; margin-top: 20px;">
           <div class="content">
             <div class="has-text-centered  is-full-width">
               <p>
                 <h2 class="title is-3">Zero-shot Voice Conversion Results</h2>
-                <table class="table" style="background-color: transparent;">
-                    <thead>
-                        <tr>
-                            <th align="center"><strong>source</strong></th>
-                            <th align="center"><strong>target</strong></th>
-                            <th align="center"><strong>gen</strong></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/27/gt_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/27/prompt_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/27/gen_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/108/gt_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/108/prompt_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/108/gen_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/58/gt_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/58/prompt_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/58/gen_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/83/gt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/83/prompt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/185/gt_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/185/prompt_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/185/gen_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/87/gt_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/87/prompt_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/87/gen_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/161/gt_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/161/prompt_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/161/gen_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/81/gt_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/81/prompt_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_all_steps/81/gen_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="table-container">
+                  <!-- 表格设置最小宽度 -->
+                  <table style="min-width: 1000px; border-collapse: collapse;">
+                      <thead>
+                          <tr>
+                              <th align="center"><strong>source</strong></th>
+                              <th align="center"><strong>target</strong></th>
+                              <th align="center"><strong>FACodec-VC</strong></th>
+                              <th align="center"><strong>SEF-VC</strong></th>
+                              <th align="center"><strong>HierSpeech++</strong></th>
+                              <th align="center"><strong>CosyVoice-VC</strong></th>
+                              <th align="center"><strong>Diff-HierVC</strong></th>
+                              <th align="center"><strong>R-VC</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/27/gt_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/27/prompt_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/27/gen_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/27/gen_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/27/gen_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/27/gen_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/27/gen_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/27/gen_27.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/108/gt_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/108/prompt_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/108/gen_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/108/gen_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/108/gen_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/108/gen_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/108/gen_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/108/gen_108.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/58/gt_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/58/prompt_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/58/gen_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/58/gen_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/58/gen_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/58/gen_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/58/gen_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/58/gen_58.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/83/gt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/83/prompt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/185/gt_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/185/prompt_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/185/gen_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/185/gen_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/185/gen_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/185/gen_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/185/gen_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/185/gen_185.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/87/gt_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/87/prompt_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/87/gen_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/87/gen_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/87/gen_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/87/gen_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/87/gen_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/87/gen_87.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/161/gt_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/161/prompt_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/161/gen_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/161/gen_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/161/gen_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/161/gen_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/161/gen_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/161/gen_161.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/81/gt_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/81/prompt_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/test_clean/81/gen_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/test_clean/81/gen_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/test_clean/81/gen_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/test_clean/81/gen_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/test_clean/81/gen_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/test_clean/81/gen_81.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      </tbody>
+                  </table>
+                </div>
                 <br>
               </p>
             </div>
@@ -200,63 +269,111 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
-          <div class="column">
+          <div class="column" style="overflow-x: auto; max-width: 100%; margin-top: 20px;">
             <div class="content">
               <div class="has-text-centered  is-full-width">
                 <p>
                   <h2 class="title is-3">Emotion Style Transfer Exp1</h2>
                   <h3 class="has-text-left title is-6">Note: source speech from test-clean dataset, target speech from ESD dataset</h3>
-                  <table class="table" style="background-color: transparent;">
+                  <div class="table-container">
+                    <!-- 表格设置最小宽度 -->
+                    <table style="min-width: 1000px; border-collapse: collapse;">
                       <thead>
                           <tr>
                               <th align="center"><strong>source</strong></th>
                               <th align="center"><strong>target</strong></th>
-                              <th align="center"><strong>gen</strong></th>
+                              <th align="center"><strong>FACodec-VC</strong></th>
+                              <th align="center"><strong>SEF-VC</strong></th>
+                              <th align="center"><strong>HierSpeech++</strong></th>
+                              <th align="center"><strong>CosyVoice-VC</strong></th>
+                              <th align="center"><strong>Diff-HierVC</strong></th>
+                              <th align="center"><strong>R-VC</strong></th>
                           </tr>
                       </thead>
                       <tbody>
                               <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/64/gt_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/64/prompt_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/64/gen_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/64/gt_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/64/prompt_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/64/gen_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/64/gen_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/64/gen_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/64/gen_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/64/gen_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/64/gen_64.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/189/gt_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/189/prompt_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/189/gen_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/189/gt_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/189/prompt_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/189/gen_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/189/gen_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/189/gen_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/189/gen_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/189/gen_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/189/gen_189.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/83/gt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                         <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/83/prompt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/83/gt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                         <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/83/prompt_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                         <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                         <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                         <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                         <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                         <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/83/gen_83.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/32/gt_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/32/prompt_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/32/gen_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/32/gt_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/32/prompt_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/32/gen_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/32/gen_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/32/gen_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/32/gen_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/32/gen_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/32/gen_32.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/142/gt_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/142/prompt_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/142/gen_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/142/gt_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/142/prompt_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/142/gen_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/142/gen_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/142/gen_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/142/gen_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/142/gen_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/142/gen_142.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/0/gt_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/0/prompt_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/0/gen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/0/gt_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/0/prompt_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/0/gen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/0/gen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/0/gen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/0/gen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/0/gen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/0/gen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/19/gt_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/19/prompt_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/19/gen_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/19/gt_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/19/prompt_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/19/gen_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/19/gen_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/19/gen_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/19/gen_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/19/gen_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/19/gen_19.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/128/gt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/128/prompt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_emo_allsteps/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/128/gt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/128/prompt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_emo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_emo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_emo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_emo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_emo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_emo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       </tbody>
-                  </table>
+                    </table>
+                  </div>
                   <br>
                 </p>
               </div>
@@ -271,63 +388,110 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
-          <div class="column">
+          <div class="column" style="overflow-x: auto; max-width: 100%; margin-top: 20px;">
             <div class="content">
               <div class="has-text-centered  is-full-width">
                 <p>
                   <h2 class="title is-3">Emotion Style Transfer Exp2</h2>
                   <h3 class="has-text-left title is-6">Note: both source and target speech from ESD dataset</h3>
-                  <table class="table" style="background-color: transparent;">
+                  <div class="table-container">
+                    <!-- 表格设置最小宽度 -->
+                    <table style="min-width: 1000px; border-collapse: collapse;">
                       <thead>
                           <tr>
                               <th align="center"><strong>source</strong></th>
                               <th align="center"><strong>target</strong></th>
-                              <th align="center"><strong>gen</strong></th>
+                              <th align="center"><strong>FACodec-VC</strong></th>
+                              <th align="center"><strong>SEF-VC</strong></th>
+                              <th align="center"><strong>HierSpeech++</strong></th>
+                              <th align="center"><strong>CosyVoice-VC</strong></th>
+                              <th align="center"><strong>Diff-HierVC</strong></th>
+                              <th align="center"><strong>R-VC</strong></th>
                           </tr>
                       </thead>
                       <tbody>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/171/gt_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/171/prompt_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/171/gen_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/171/gt_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/171/prompt_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/171/gen_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/171/gen_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/171/gen_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/171/gen_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/171/gen_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/171/gen_171.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/186/gt_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/186/prompt_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                          <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/186/gen_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/186/gt_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/186/prompt_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/186/gen_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/186/gen_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/186/gen_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/186/gen_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/186/gen_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/186/gen_186.wav" autoplay/>Your browser does not support the audio element.</audio></td>
                       </tr>
                       <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/56/gt_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/56/prompt_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/56/gen_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/172/gt_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/172/prompt_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/172/gen_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/91/gt_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/91/prompt_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/91/gen_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/127/gt_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/127/prompt_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/127/gen_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/128/gt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/128/prompt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/153/gt_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/153/prompt_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                        <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 250px; height: 40px"><source src="./static/audio_sample/521k_fullemo_allsteps/153/gen_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-                    </tr>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/56/gt_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/56/prompt_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/56/gen_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/56/gen_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/56/gen_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/56/gen_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/56/gen_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/56/gen_56.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/172/gt_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/172/prompt_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/172/gen_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/172/gen_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/172/gen_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/172/gen_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/172/gen_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/172/gen_172.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/91/gt_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/91/prompt_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/91/gen_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/91/gen_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/91/gen_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/91/gen_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/91/gen_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/91/gen_91.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/127/gt_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/127/prompt_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/127/gen_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/127/gen_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/127/gen_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/127/gen_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/127/gen_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/127/gen_127.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/128/gt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/128/prompt_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/128/gen_128.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/153/gt_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/153/prompt_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/facodec/esd_fullemo/153/gen_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/sefvc/esd_fullemo/153/gen_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/hierspeech++/esd_fullemo/153/gen_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/cosyvoice/esd_fullemo/153/gen_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/baselines/diff-hiervc/esd_fullemo/153/gen_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/esd_fullemo/153/gen_153.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
                       </tbody>
-                  </table>
+                    </table>
                   <br>
                 </p>
               </div>
