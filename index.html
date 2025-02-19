@@ -62,7 +62,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Rhythm Controllable Zero-Shot Voice Conversion via Diffusion Transformer and Mask Generative Duration Model</h1>
+          <h1 class="title is-1 publication-title">Rhythm Controllable and Efficient Zero-Shot Voice Conversion via Shortcut Flow Matching</h1>
           <div class="is-size-5 publication-authors">
             <!-- <span class="author-block">Qian Yang<sup>1,*</sup>,</span>
             <span class="author-block">Jialong Zuo<sup>1,*</sup>,</span>
@@ -118,7 +118,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Zero-Shot Voice Conversion (VC) aims to transform the source speaker’s timbre into an arbitrary unseen one while retaining speech content. However, in addition to linguistic content and timbre, prosody is an indispensable aspect of speech. Most prior work focuses on preserving the source's prosody, while fine-grained timbre information may leak through prosody, and transferring target prosody to synthesized speech is rarely studied. In light of this, we propose R-VC, a rhythm-controllable zero-shot voice conversion model, leveraging a powerful Diffusion Transformer (DiT) with a target speech prompting strategy, and a Mask Generative Transformer model for in-context duration modeling. Specifically, we apply data perturbation techniques and discretize source speech into Hubert content tokens, which greatly eliminate content-irrelevant information. Additionally, we deduplicate the same discrete tokens and employ a Mask Generative Transformer to adapt the duration of the linguistic content to the desired target speaking style. Finally, to enhance speaker similarity and generate high-quality speech, we use a DiT-based conditional flow matching model to reconstruct acoustic features. Experimental results show that R-VC achieves comparable speaker similarity to state-of-the-art VC methods with a smaller dataset, and surpasses them in terms of speech naturalness, intelligibility and style transfer performance.
+            Zero-Shot Voice Conversion (VC) aims to transform the source speaker’s timbre into an arbitrary unseen one while retaining speech content. Most prior work focuses on preserving the source's prosody, while fine-grained timbre information may leak through prosody, and transferring target prosody to synthesized speech is rarely studied. In light of this, we propose R-VC, a rhythm-controllable and efficient zero-shot voice conversion model. R-VC employs data perturbation techniques and discretize source speech into Hubert content tokens, eliminating much content-irrelevant information. By leveraging a Mask Generative Transformer for in-context duration modeling, our model adapts the linguistic content duration to the desired target speaking style, facilitating the transfer of the target speaker's rhythm. Furthermore, R-VC introduces a powerful Diffusion Transformer (DiT) with shortcut flow matching during training, conditioning the network not only on the current noise level but also on the desired step size, enabling high timbre similarity and quality speech generation in fewer sampling steps, even in just two, thus minimizing latency. Experimental results show that R-VC achieves comparable speaker similarity to state-of-the-art VC methods with a smaller dataset, and surpasses them in terms of speech naturalness, intelligibility and style transfer performance.
           </p>
         </div>
 
@@ -135,7 +135,7 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Model Overview</h2>
-          <img src="./static/images/1b57a10a4007f5191f5e575707ceba5.png"
+          <img src="./static/images/framework.jpg"
                     class="interpolation-image"
                     alt="Interpolate start reference image."/>
           <h2 class="has-text-centered is-8">
