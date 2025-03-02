@@ -528,5 +528,270 @@
       </div>
     </div>
   </section>
+
+
+  <section class="hero is-light is-small"> 
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column" style="overflow-x: auto; max-width: 100%; margin-top: 20px;">
+            <div class="content">
+              <div class="has-text-centered  is-full-width">
+                <p>
+                  <h2 class="title is-3">CFM and Shortcut CFM methods under various sampling steps</h2>
+                  <!-- <h3 class="has-text-left title is-6">Note: both source and target speech from ESD dataset</h3> -->
+                  <div class="table-container">
+                    <!-- 表格设置最小宽度 -->
+                    <table style="min-width: 1000px; border-collapse: collapse;">
+                      <thead>
+                          <tr>
+                              <th align="center"><strong>Model</strong></th>
+                              <th align="center"><strong>source</strong></th>
+                              <th align="center"><strong>target</strong></th>
+                              <th align="center"><strong>NFE=1</strong></th>
+                              <th align="center"><strong>NFE=2</strong></th>
+                              <th align="center"><strong>NFE=4</strong></th>
+                              <th align="center"><strong>NFE=8</strong></th>
+                              <th align="center"><strong>NFE=16</strong></th>
+                              <th align="center"><strong>NFE=32</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;">CFM</td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/2/gt_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/2/prompt_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_2step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_4step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_8step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_16step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_32step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;">Shortcut CFM</td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/2/gt_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/2/prompt_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_4step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_8step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_16step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_32step/2/gen_2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table style="min-width: 1000px; border-collapse: collapse;">
+                      <thead>
+                          <tr>
+                              <th align="center"><strong>Model</strong></th>
+                              <th align="center"><strong>source</strong></th>
+                              <th align="center"><strong>target</strong></th>
+                              <th align="center"><strong>NFE=1</strong></th>
+                              <th align="center"><strong>NFE=2</strong></th>
+                              <th align="center"><strong>NFE=4</strong></th>
+                              <th align="center"><strong>NFE=8</strong></th>
+                              <th align="center"><strong>NFE=16</strong></th>
+                              <th align="center"><strong>NFE=32</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;">CFM</td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/13/gt_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/13/prompt_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_2step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_4step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_8step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_16step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_32step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;">Shortcut CFM</td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/13/gt_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/13/prompt_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_4step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_8step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_16step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_32step/13/gen_13.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="min-width: 1000px; border-collapse: collapse;">
+                      <thead>
+                          <tr>
+                              <th align="center"><strong>Model</strong></th>
+                              <th align="center"><strong>source</strong></th>
+                              <th align="center"><strong>target</strong></th>
+                              <th align="center"><strong>NFE=1</strong></th>
+                              <th align="center"><strong>NFE=2</strong></th>
+                              <th align="center"><strong>NFE=4</strong></th>
+                              <th align="center"><strong>NFE=8</strong></th>
+                              <th align="center"><strong>NFE=16</strong></th>
+                              <th align="center"><strong>NFE=32</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;">CFM</td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/72/gt_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/72/prompt_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_2step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_4step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_8step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_16step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_32step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;">Shortcut CFM</td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/72/gt_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/72/prompt_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_4step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_8step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_16step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_32step/72/gen_72.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="min-width: 1000px; border-collapse: collapse;">
+                      <thead>
+                          <tr>
+                              <th align="center"><strong>Model</strong></th>
+                              <th align="center"><strong>source</strong></th>
+                              <th align="center"><strong>target</strong></th>
+                              <th align="center"><strong>NFE=1</strong></th>
+                              <th align="center"><strong>NFE=2</strong></th>
+                              <th align="center"><strong>NFE=4</strong></th>
+                              <th align="center"><strong>NFE=8</strong></th>
+                              <th align="center"><strong>NFE=16</strong></th>
+                              <th align="center"><strong>NFE=32</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;">CFM</td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/97/gt_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/97/prompt_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_2step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_4step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_8step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_16step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_32step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;">Shortcut CFM</td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/97/gt_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/97/prompt_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_4step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_8step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_16step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_32step/97/gen_97.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="min-width: 1000px; border-collapse: collapse;">
+                      <thead>
+                          <tr>
+                              <th align="center"><strong>Model</strong></th>
+                              <th align="center"><strong>source</strong></th>
+                              <th align="center"><strong>target</strong></th>
+                              <th align="center"><strong>NFE=1</strong></th>
+                              <th align="center"><strong>NFE=2</strong></th>
+                              <th align="center"><strong>NFE=4</strong></th>
+                              <th align="center"><strong>NFE=8</strong></th>
+                              <th align="center"><strong>NFE=16</strong></th>
+                              <th align="center"><strong>NFE=32</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;">CFM</td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/149/gt_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/149/prompt_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_2step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_4step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_8step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_16step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_32step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;">Shortcut CFM</td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/149/gt_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/149/prompt_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_4step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_8step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_16step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_32step/149/gen_149.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="min-width: 1000px; border-collapse: collapse;">
+                      <thead>
+                          <tr>
+                              <th align="center"><strong>Model</strong></th>
+                              <th align="center"><strong>source</strong></th>
+                              <th align="center"><strong>target</strong></th>
+                              <th align="center"><strong>NFE=1</strong></th>
+                              <th align="center"><strong>NFE=2</strong></th>
+                              <th align="center"><strong>NFE=4</strong></th>
+                              <th align="center"><strong>NFE=8</strong></th>
+                              <th align="center"><strong>NFE=16</strong></th>
+                              <th align="center"><strong>NFE=32</strong></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td style="text-align: center;vertical-align:middle;">CFM</td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/159/gt_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/159/prompt_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_1step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_2step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_4step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_8step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_16step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/cfm_32step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;vertical-align:middle;">Shortcut CFM</td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/159/gt_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/159/prompt_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_1step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_2step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_4step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_8step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_16step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center;vertical-align:middle;"><audio controls="controls" style="width: 160px; height: 40px"><source src="./static/audio_sample/various_steps/scfm_32step/159/gen_159.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                    </tr>
+                      </tbody>
+                    </table>
+
+            
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
